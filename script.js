@@ -9,6 +9,11 @@ class Person {
     return this._name;
   }
 
+  // Setter for name
+  set name(newName) {
+    this._name = newName;
+  }
+
   // Getter for age
   get age() {
     return this._age;
@@ -36,17 +41,5 @@ class Teacher extends Person {
 window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
-
-let person = new Person("John", 25);
-console.log(person.name);   // John
-
-person.age = 30;
-console.log(person.age);    // 30
-
-let student = new Student("Alice", 22);
-student.study();            // Alice is studying
-
-let teacher = new Teacher("Bob", 40);
-teacher.teach();            // Bob is teaching
 
 
